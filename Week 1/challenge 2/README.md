@@ -44,7 +44,7 @@
   
 ---
 
-## 👓 3. tunn3l v1s10n
+## 3. tunn3l v1s10n
 
 * **Issue**: File appeared unreadable and corrupted
 * **Used**: `hexedit` to manually inspect and edit file headers

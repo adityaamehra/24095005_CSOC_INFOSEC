@@ -169,7 +169,7 @@ The final file being:-
 
 ## 🧠 9. MSB
 
-* **Tool**: `sigbits.py` from GitHub
+* **Tool**: [sigbits.py](https://github.com/Pulho/sigBits)
 * **Concept**: Extracting most significant bits from image pixels to uncover hidden messages
 * **Method**:
 

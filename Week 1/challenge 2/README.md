@@ -48,7 +48,7 @@
 
 * **Issue**: File appeared unreadable and corrupted
 * **Used**: `hexedit` to manually inspect and edit file headers
-* **Discovered**: A hidden reference to a BMP file format tutorial
+* **Discovered**: [A hidden reference to a BMP file format tutorial](https://www.donwalizerjr.com/understanding-bmp/)
 * **Fix**:
 
   * Set byte at offset 0x0E to `28`

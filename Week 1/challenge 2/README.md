@@ -197,7 +197,3 @@ The final file being:-
   ```
   picoCTF{now_you_know_about_extensions}
   ```
-
----
-
-**Status**: ✅ All 10 challenges successfully analyzed and flags recovered.

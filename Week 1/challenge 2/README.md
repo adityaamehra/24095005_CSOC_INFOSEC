@@ -44,11 +44,11 @@
   
 ---
 
-## 👓 3. tunn3l v1s10n
+## 3. tunn3l v1s10n
 
 * **Issue**: File appeared unreadable and corrupted
 * **Used**: `hexedit` to manually inspect and edit file headers
-* **Discovered**: A hidden reference to a BMP file format tutorial
+* **Discovered**: [A hidden reference to a BMP file format tutorial](https://www.donwalizerjr.com/understanding-bmp/)
 * **Fix**:
 
   * Set byte at offset 0x0E to `28`
@@ -169,7 +169,7 @@ The final file being:-
 
 ## 🧠 9. MSB
 
-* **Tool**: `sigbits.py` from GitHub
+* **Tool**: [sigbits.py](https://github.com/Pulho/sigBits)
 * **Concept**: Extracting most significant bits from image pixels to uncover hidden messages
 * **Method**:
 
@@ -197,7 +197,3 @@ The final file being:-
   ```
   picoCTF{now_you_know_about_extensions}
   ```
-
----
-
-**Status**: ✅ All 10 challenges successfully analyzed and flags recovered.

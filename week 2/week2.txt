@@ -1,0 +1,12 @@
+challenge 1:-
+
+used Dcode ascii code for the majority part 
+
+got :- CSOC25{1d3n71fy1ng_d1ff3r3n7_3nc0d1ng5}
+
+challenge 2:-
+
+flag :- CSOC25{y0u_kn0w_X0r_4nd_b45364}
+
+
+did the base64 on the source.enc , and got the python code and then reversed it and did the xoring and converting into ascii code 

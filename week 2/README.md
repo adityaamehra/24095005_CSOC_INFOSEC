@@ -237,7 +237,24 @@
 | **Resisting Bruteforce** | Biclique cryptanalysis highlights AES key‑space resilience.             | `crypto{biclique}`  |
 | **Structure of AES**     | State array manipulation shown through `bytes2matrix` / `matrix2bytes`. | `crypto{inmatrix}`  |
 
-> **Note 📝**: The accompanying code demonstrates conversion between linear byte sequences and the \$4\times4\$ AES state matrix, a vital internal representation.
+```python
+
+def b2m(text):
+    return [list(text[i:i+4]) for i in range(0, len(text), 4)]
+def m2b(matrix):
+    text = ''
+    for i in range(len(matrix)):
+        for j in range(4):
+            text += chr(matrix[i][j])
+    return text
+matrix = [
+    [99, 114, 121, 112],
+    [116, 111, 123, 105],
+    [110, 109, 97, 116],
+    [114, 105, 120, 125],
+]
+print(m2b(matrix))
+```
 
 ---
 

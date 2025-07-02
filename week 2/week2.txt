@@ -28,6 +28,8 @@ challenge 2:-
 
 INTRODUCTION TO CRYPTOHACK:-
 
+a.) General :-
+
 1.) Great Snakes:-
 
 code :-
@@ -81,6 +83,8 @@ print(long_to_bytes(secret))
 
 flag :- b'crypto{3nc0d1n6_4ll_7h3_w4y_d0wn}'
 
+b.) XOR:-
+
 6.) XOR Starter:-
 
 code :-
@@ -122,3 +126,88 @@ When using the key crypto{ we get the output which contains the string myXORkey 
 
 
 flag:- crypto{1f_y0u_Kn0w_En0uGH_y0u_Kn0w_1t_4ll}
+
+c.) Mathematics :-
+
+10.) Greatest Common Divisor:-
+
+code :-
+
+def euclid_gcd(x, y):
+    if x < y:
+        return euclid_gcd(y, x)
+
+    while y != 0:
+        (x, y) = (y, x % y)
+
+    print("\n[+] GCD: {}".format(x))
+    return x
+
+# a = 12
+# b = 8
+
+a = 66528
+b = 52920
+
+euclid_gcd(a, b)
+
+flag :- 1512
+
+11.) Extended GCD:-
+
+code :-
+
+def extended_gcd(p,q):
+    if p == 0:
+        return (q, 0, 1)
+    else:
+        (gcd, u, v) = extended_gcd(q % p, p)
+        return (gcd, v - (q // p) * u, u)
+
+p = 26513
+q = 32321
+
+gcd, u, v = extended_gcd(p, q)
+print("[+] GCD: {}".format(gcd))
+print("[+] u,v: {},{}".format(u,v))
+print("\n[*] FLAG: crypto{{{},{}}}".format(u,v))
+
+flag :- -8404
+
+12.) Modular Arithmetic 1:-
+
+code :-
+This problem is different from normal modular process because it involves modular congruence. If you haven’t noticed, the two equations given contain ≡ instead of the normal =. ≡ denotes modular congruence and one of its properties is if a ≡ b mod n, then b ≡ a mod n. Moreover, congruence means that a and b has the same equivalence class.
+Let’s find the value of a
+11 ≡ a mod 6 is same as a ≡ 11 mod 6
+11 mod 6 is 5 so we now have the value of a.
+To verify that they are congruent, they should have the same equivalence class
+11 mod 6 = 5 (equivalence class for 5)
+5 mod 6 = 5 (equivalence class for 5)
+This means that a and b (a = 5 and b = 11) are both in the same equivalence class.
+Repeat the process for the given equation and we’ll have 4.
+
+flag :- 4
+
+13.) Modular Arithmetic 2:-
+
+code :-
+
+You could say that a raise to p-1 modulo p is equal to 1, on the condition that p is prime and a is any integer not divisible by p.
+So despite the ridiculously large given number of 273246787654 raised to p, we know that the answer is 1
+
+flag :- 1
+
+14.) Modular Inverting :-
+
+code :-
+
+3.d=(13m+1)  , where m belongs integer
+
+d=(13m+1)/3
+
+take m=2,
+
+d=9
+
+flag :- 9

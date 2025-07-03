@@ -14,6 +14,8 @@
   * `'` closes the open quote in the SQL query.
   * The `admin` user exists, so this bypasses password verification.
 
+* **Video Writeup:**[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/web_gaunglet_1.mov)
+
 ### Round 2
 
 * **Username:** `admin'/*`

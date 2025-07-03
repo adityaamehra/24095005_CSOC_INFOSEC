@@ -96,3 +96,29 @@ X-Forwarded-For: 88.80.6.19
 Connection: keep-alive
 
 flag :- picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_0c0db339}
+
+9.) Irish-Name-Repo 1:-
+
+username :- admin'--
+password :- 123(can be anything)
+
+reason :- I tried to first do the inspect element on the home page , didnt find anything then went to the support page found the word SQL there though of sql injection and went to the admin login page and used the username , we got logged in.
+
+flag :- picoCTF{s0m3_SQL_c218b685}
+
+10.) Irish-Name-Repo 2:-
+
+username :- admin'--
+password :- 123(can be anything)
+
+reason :- I tried to first do the inspect element on the home page , didnt find anything then went to the support page found the word SQL there though of sql injection and went to the admin login page and used the username , we got logged in.
+
+flag :- picoCTF{m0R3_SQL_plz_fa983901}
+
+11.) Irish-Name-Repo 3:-
+
+password :- ' be 1=1 --
+
+reason :- The password was being encrypted by a rot cipher , such that a -> n and such that , i also observed that the numbers and all the special characters are not being touched and all of this can be seen by the sql query that was being displayed on the screen after seeing that there is a debug header in burp suite .
+
+flag :- picoCTF{3v3n_m0r3_SQL_06a9db19}

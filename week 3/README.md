@@ -14,8 +14,6 @@
   * `'` closes the open quote in the SQL query.
   * The `admin` user exists, so this bypasses password verification.
 
-* **Video Writeup:**[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/web_gaunglet_1.mov)
-
 ### Round 2
 
 * **Username:** `admin'/*`
@@ -55,6 +53,9 @@
 
 * **Flag:** `picoCTF{y0u_m4d3_1t_a5f58d5564fce237fbcc978af033c11b}`
 
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/web_gaunglet_1.mov)
+
 ---
 
 ## 2. Web Gauntlet 2
@@ -71,6 +72,9 @@
 
 * **Flag:** `picoCTF{0n3_m0r3_t1m3_e2db86ae880862ad471aa4c93343b2bf}`
 
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/web_gaunglet_2.mov)
+
 ---
 
 ## 3. Web Gauntlet 3
@@ -84,6 +88,9 @@
   * Reuse of the logical injection with safe syntax to pass verification.
 
 * **Flag:** `picoCTF{k3ep_1t_sh0rt_eb90a623e2c581bcd3127d9d60a4dead}`
+
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/web_gaunglet_3.mov)
 
 ---
 
@@ -104,6 +111,9 @@
 
 * **Flag:** `picoCTF{jawt_was_just_what_you_thought_1ca14548}`
 
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/jawt_scratchpad.mov)
+
 ---
 
 ## 5. Secrets
@@ -116,6 +126,9 @@
 
 * **Flag:** `picoCTF{succ3ss_@h3n1c@10n_39849bcf}`
 
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/fab37c3ff070ff2009b00bc768a76133f27daeb2/week%203/secrets.mov)
+
 ---
 
 ## 6. IntroToBurp
@@ -127,6 +140,9 @@
   * Ultimately removed the OTP field entirely and discovered server-side mishandling.
 
 * **Flag:** `picoCTF{#0TP_Bypvss_SuCc3$S_9090d63c}`
+
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/fab37c3ff070ff2009b00bc768a76133f27daeb2/week%203/IntroToBurp.mov)
 
 ---
 
@@ -171,6 +187,9 @@ Connection: keep-alive
 
 * **Flag:** `picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_0c0db339}`
 
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/Who_are_you?.mov)
+
 ---
 
 ## 9. Irish-Name-Repo 1
@@ -187,6 +206,9 @@ Connection: keep-alive
 
 * **Flag:** `picoCTF{s0m3_SQL_c218b685}`
 
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/irish_man_repo_1.mov)
+
 ---
 
 ## 10. Irish-Name-Repo 2
@@ -202,6 +224,9 @@ Connection: keep-alive
 
 * **Flag:** `picoCTF{m0R3_SQL_plz_fa983901}`
 
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/irish_man_repo_2.mov)
+
 ---
 
 ## 11. Irish-Name-Repo 3
@@ -216,3 +241,6 @@ Connection: keep-alive
   * Crafted final injection payload using understanding of cipher.
 
 * **Flag:** `picoCTF{3v3n_m0r3_SQL_06a9db19}`
+
+### Video Writeup: 
+[Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/irish_man_repo_3.mov)

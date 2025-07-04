@@ -40,7 +40,7 @@
   ```
   picoCTF{bf6acf878dcbd752f4721e41b1b1b66b}
   ```
-  ![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/Week%201/challenge%202/assests/Matryoshka%20doll.png)
+  ![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/7740a2a58643de8c5f8c2de6c67af4371fe5a7da/week%201/challenge%202/assests/Matryoshka%20doll.png)
   
 ---
 
@@ -60,11 +60,11 @@
   picoCTF{qu1t3_a_v13w_2020}
   ```
 This is the intermediate file :-
-![photo](https://raw.githubusercontent.com/adityaamehra/24095005_CSOC_INFOSEC/refs/heads/main/Week%201/challenge%202/assests/tunn3l_v1s10n(intermediate).bmp)
+![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/7740a2a58643de8c5f8c2de6c67af4371fe5a7da/week%201/challenge%202/assests/tunn3l_v1s10n(intermediate).bmp)
 
 The final file being:-
 
-![photo](https://raw.githubusercontent.com/adityaamehra/24095005_CSOC_INFOSEC/refs/heads/main/Week%201/challenge%202/assests/tunn3l_v1s10n.bmp)
+![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/7740a2a58643de8c5f8c2de6c67af4371fe5a7da/week%201/challenge%202/assests/tunn3l_v1s10n.bmp)
 
 ---
 
@@ -104,7 +104,7 @@ The final file being:-
   picoCTF{3nh4nc3d_d0a757bf}
   ```
 
-![Flag in inspect element](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/Week%201/challenge%202/assests/Enhance!.png)
+![Flag in inspect element](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/7740a2a58643de8c5f8c2de6c67af4371fe5a7da/week%201/challenge%202/assests/Enhance!.png)
 
 ---
 
@@ -163,7 +163,7 @@ The final file being:-
   picoCTF{Hiddinng_An_imag3_within_@n_ima9e_82101824}
   ```
 
-![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/Week%201/challenge%202/assests/hideme.png)
+![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/7740a2a58643de8c5f8c2de6c67af4371fe5a7da/week%201/challenge%202/assests/hideme.png)
 
 ---
 

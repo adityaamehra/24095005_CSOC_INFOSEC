@@ -122,3 +122,23 @@ password :- ' be 1=1 --
 reason :- The password was being encrypted by a rot cipher , such that a -> n and such that , i also observed that the numbers and all the special characters are not being touched and all of this can be seen by the sql query that was being displayed on the screen after seeing that there is a debug header in burp suite .
 
 flag :- picoCTF{3v3n_m0r3_SQL_06a9db19}
+
+12.) Java Script Kiddie :-
+
+key :-  5108180345363640
+
+reason :- The javascript code first bisects everything in rows of 16 elements and then uses a shifter variable which shift the specific column by the set amount in the key, so just wrote the code to mimic the header of the PNG files and then we got the final key as "51081803???63640" , where the 
+first ? had 3 choices 2,3,4 
+second ? had 4 choices 3,4,5,6
+third ? had 3 choices 2,3,4 
+so i applied the brute-force technique and got the answer
+
+flag :- picoCTF{066cad9e69c5c7e5d2784185c0feb30b}
+
+13.) Java Script Kiddie 2 :-
+
+key :- 60005030108010709050702060300090
+
+reason :- In this also the things were mostly the same expect how the shifter was being taken in consideration this time it took it in a group of 2 so had to append one "0" after every match and the key that we got after taking the first occurance of the bit were taken and got the answer.
+
+flag :- picoCTF{59d5db659865190a07120652e6c77f84}

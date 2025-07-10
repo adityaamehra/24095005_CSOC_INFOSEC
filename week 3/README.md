@@ -244,3 +244,60 @@ Connection: keep-alive
 
 ### Video Writeup: 
 [Here](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/irish_man_repo_3.mov)
+
+---
+
+## 12. JavaScript Kiddie 1
+
+* **Key:** `5108180345363640`
+* **Script Used:**
+
+```python
+LEN = 16
+expected_bytes = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A,
+                  0x00, 0x00, 0x00, 0x0D, 0x49, 0x48, 0x44, 0x52]
+image_bytes = [...]  # Truncated for brevity
+image_bytes = [int(byte) for byte in image_bytes]
+
+key = []
+for key_idx in range(LEN):
+    for shifter in range(10):
+        offset = ((shifter * LEN) % len(image_bytes)) + key_idx
+        if expected_bytes[key_idx] == image_bytes[offset]:
+            key.append(shifter)
+            break
+print("Key:", *key, sep="")
+```
+
+* **Reasoning:** The JavaScript code breaks the image data into 16-byte blocks and performs column-wise shifting using a key. Reversing the transformation for the known PNG header allowed us to deduce partial key values. Since a few bytes matched multiple possible digits, brute-force was employed on the unknown digits.
+* **Flag:** `picoCTF{066cad9e69c5c7e5d2784185c0feb30b}`
+
+[!photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/java_script_qr.png)
+
+## 13. JavaScript Kiddie 2
+
+* **Key:** `60005030108010709050702060300090`
+* **Script Used:**
+
+```python
+LEN = 16
+expected_bytes = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A,
+                  0x00, 0x00, 0x00, 0x0D, 0x49, 0x48, 0x44, 0x52]
+image_bytes = [...]  # Truncated for brevity
+image_bytes = [int(byte) for byte in image_bytes]
+
+key = []
+for key_idx in range(LEN):
+    for shifter in range(10):
+        offset = ((shifter * LEN) % len(image_bytes)) + key_idx
+        if expected_bytes[key_idx] == image_bytes[offset]:
+            key.append(shifter)
+            key.append(0)  # As observed, digits are padded with 0s
+            break
+print("Key:", *key, sep="")
+```
+
+* **Reasoning:** Similar to the first challenge, but the key format differed — each actual digit was padded with a zero to form two-digit groups. After extracting image offsets, we matched them with expected PNG header bytes and constructed the key accordingly.
+* **Flag:** `picoCTF{59d5db659865190a07120652e6c77f84}`
+
+[!photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/java_script_2_qr.png)

@@ -271,6 +271,7 @@ print("Key:", *key, sep="")
 
 * **Reasoning:**
   The challenge involved recovering a PNG file header from a scrambled image byte array. The script works by trying all possible decimal digit values (`0-9`) as a shifter applied to each column index of the byte array. The byte shift logic is inferred from JavaScript which scrambles each column of a 16-byte-wide image grid by applying an offset: `offset = (shifter × 16) % total_length + column_index`. By comparing shifted bytes with the standard 16-byte PNG header (`89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52`), we deduce the `shifter` values forming the key.
+The key we got the script is `51081803???63640`.
 
   During execution, three bytes yielded ambiguous matches—i.e., multiple shifter values aligned correctly with the header. Specifically, positions with `?` had the following shifter options:
 

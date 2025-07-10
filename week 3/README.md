@@ -54,7 +54,7 @@
 * **Flag:** `picoCTF{y0u_m4d3_1t_a5f58d5564fce237fbcc978af033c11b}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/web_gaunglet_1.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/web_gaunglet_1.mov)
 
 ---
 
@@ -73,7 +73,7 @@
 * **Flag:** `picoCTF{0n3_m0r3_t1m3_e2db86ae880862ad471aa4c93343b2bf}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/web_gaunglet_2.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/web_gaunglet_2.mov)
 
 ---
 
@@ -90,7 +90,7 @@
 * **Flag:** `picoCTF{k3ep_1t_sh0rt_eb90a623e2c581bcd3127d9d60a4dead}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/web_gaunglet_3.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/web_gaunglet_3.mov)
 
 ---
 
@@ -112,7 +112,7 @@
 * **Flag:** `picoCTF{jawt_was_just_what_you_thought_1ca14548}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/jawt_scratchpad.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/jawt_scratchpad.mov)
 
 ---
 
@@ -127,7 +127,7 @@
 * **Flag:** `picoCTF{succ3ss_@h3n1c@10n_39849bcf}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/fab37c3ff070ff2009b00bc768a76133f27daeb2/week%203/secrets.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/secrets.mov)
 
 ---
 
@@ -142,7 +142,7 @@
 * **Flag:** `picoCTF{#0TP_Bypvss_SuCc3$S_9090d63c}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/fab37c3ff070ff2009b00bc768a76133f27daeb2/week%203/IntroToBurp.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/IntroToBurp.mov)
 
 ---
 
@@ -188,7 +188,7 @@ Connection: keep-alive
 * **Flag:** `picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_0c0db339}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/Who_are_you?.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/Who_are_you?.mov)
 
 ---
 
@@ -207,7 +207,7 @@ Connection: keep-alive
 * **Flag:** `picoCTF{s0m3_SQL_c218b685}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/irish_man_repo_1.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/irish_man_repo_1.mov)
 
 ---
 
@@ -225,7 +225,7 @@ Connection: keep-alive
 * **Flag:** `picoCTF{m0R3_SQL_plz_fa983901}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/irish_man_repo_2.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/irish_man_repo_2.mov)
 
 ---
 
@@ -243,7 +243,7 @@ Connection: keep-alive
 * **Flag:** `picoCTF{3v3n_m0r3_SQL_06a9db19}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/e280e48eb064bd1d9e26af59bfd76a6adee9d639/week%203/irish_man_repo_3.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/irish_man_repo_3.mov)
 
 ---
 
@@ -272,7 +272,7 @@ print("Key:", *key, sep="")
 * **Reasoning:** The JavaScript code breaks the image data into 16-byte blocks and performs column-wise shifting using a key. Reversing the transformation for the known PNG header allowed us to deduce partial key values. Since a few bytes matched multiple possible digits, brute-force was employed on the unknown digits.
 * **Flag:** `picoCTF{066cad9e69c5c7e5d2784185c0feb30b}`
 
-![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/java_script_qr.png)
+![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/java_script_qr.png)
 
 ## 13. JavaScript Kiddie 2
 
@@ -300,4 +300,4 @@ print("Key:", *key, sep="")
 * **Reasoning:** Similar to the first challenge, but the key format differed — each actual digit was padded with a zero to form two-digit groups. After extracting image offsets, we matched them with expected PNG header bytes and constructed the key accordingly.
 * **Flag:** `picoCTF{59d5db659865190a07120652e6c77f84}`
 
-![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/java_script_2_qr.png)
+![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/java_script_2_qr.png)

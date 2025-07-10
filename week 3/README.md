@@ -269,7 +269,17 @@ for key_idx in range(LEN):
 print("Key:", *key, sep="")
 ```
 
-* **Reasoning:** The JavaScript code breaks the image data into 16-byte blocks and performs column-wise shifting using a key. Reversing the transformation for the known PNG header allowed us to deduce partial key values. Since a few bytes matched multiple possible digits, brute-force was employed on the unknown digits.
+* **Reasoning:**
+  The challenge involved recovering a PNG file header from a scrambled image byte array. The script works by trying all possible decimal digit values (`0-9`) as a shifter applied to each column index of the byte array. The byte shift logic is inferred from JavaScript which scrambles each column of a 16-byte-wide image grid by applying an offset: `offset = (shifter × 16) % total_length + column_index`. By comparing shifted bytes with the standard 16-byte PNG header (`89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52`), we deduce the `shifter` values forming the key.
+
+  During execution, three bytes yielded ambiguous matches—i.e., multiple shifter values aligned correctly with the header. Specifically, positions with `?` had the following shifter options:
+
+  * First `?`: `2`, `3`, `4`
+  * Second `?`: `3`, `4`, `5`, `6`
+  * Third `?`: `2`, `3`, `4`
+
+  Hence, brute-forcing through all possible combinations of these positions (3×4×3 = 36) allowed reconstruction of the correct key and successful decryption of the PNG file.
+
 * **Flag:** `picoCTF{066cad9e69c5c7e5d2784185c0feb30b}`
 
 ![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/java_script_qr.png)
@@ -292,12 +302,18 @@ for key_idx in range(LEN):
         offset = ((shifter * LEN) % len(image_bytes)) + key_idx
         if expected_bytes[key_idx] == image_bytes[offset]:
             key.append(shifter)
-            key.append(0)  # As observed, digits are padded with 0s
+            key.append(0)  # Pattern required 0-padding between actual digits
             break
 print("Key:", *key, sep="")
 ```
 
-* **Reasoning:** Similar to the first challenge, but the key format differed — each actual digit was padded with a zero to form two-digit groups. After extracting image offsets, we matched them with expected PNG header bytes and constructed the key accordingly.
+* **Reasoning:**
+  This problem builds on the previous logic but introduces a slight twist in key encoding. Each shifter digit is now followed by a literal `0`, forming a two-digit token (e.g., `6` becomes `60`). Hence, the full key length becomes 32 instead of 16. The byte shift logic remains unchanged, and matching with the PNG header proceeds in the same manner.
+
+  After retrieving each shifter, a zero was appended to mimic the new key formatting. Using this technique, the key was reconstructed accurately and the image was successfully restored.
+
 * **Flag:** `picoCTF{59d5db659865190a07120652e6c77f84}`
 
 ![photo](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/java_script_2_qr.png)
+
+---

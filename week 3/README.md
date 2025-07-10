@@ -188,7 +188,7 @@ Connection: keep-alive
 * **Flag:** `picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_0c0db339}`
 
 ### Video Writeup: 
-![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/6dd62fb7e7a99c4439404c2738ce3fde311925c5/week%203/assests/Who_are_you?.mov)
+![video](https://github.com/adityaamehra/24095005_CSOC_INFOSEC/blob/main/week%203/assests/Who_are_you%3F.mov)
 
 ---
 

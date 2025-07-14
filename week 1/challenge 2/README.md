@@ -80,7 +80,7 @@ The final file being:-
 * **Decoded using**:
 
   ```bash
-  echo "<base64_string>" | base64 -d
+  echo "cGljb0NURntEMWRfdV9rbjB3X3BwdHNfcl96MXA1fQ==" | base64 -d
   ```
 * **Flag**:
 
